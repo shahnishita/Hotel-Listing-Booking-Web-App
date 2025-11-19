@@ -1,0 +1,173 @@
+/* ================= Global Reset ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================= Body ================= */
+body {
+  background-color: #0a0a0a; /* deep black */
+  color: #e0e0e0;
+}
+
+/* ================= Home Main Container ================= */
+.homeMain {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #1a0a2f, 6a0dad);
+}
+
+/* ================= Home Inner Container ================= */
+.homeContainer {
+  width: 90%;
+  max-width: 1300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ================= Section Titles ================= */
+.homeTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #d8b4fe; /* light purple */
+  margin-bottom: 20px;
+  text-align: left;
+  border-left: 5px solid 6a0dad; /* accent purple */
+  padding-left: 10px;
+}
+
+/* ================= Featured Section ================= */
+.featured {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.featuredItem {
+  flex: 1;
+  min-width: 250px;
+  background: linear-gradient(145deg, #2b0030,6a0dad);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.featuredItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.7);
+}
+
+.featuredImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.featuredTitle {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color:6a0dad;
+}
+
+/* ================= Property List ================= */
+.propertyList {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.propertyItem {
+  flex: 1;
+  min-width: 200px;
+  background: #1f0f2c;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.propertyItem:hover {
+  transform: scale(1.05);
+}
+
+.propertyImg {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.propertyName {
+  padding: 10px;
+  font-weight: 500;
+  color:6a0dad;
+}
+
+/* ================= MailList Section ================= */
+.mailList {
+  background: #2c0038;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #f3e8ff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.mailList h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.mailList input[type="email"] {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.mailList button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: 6a0dad;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.mailList button:hover {
+  background: 6a0dad;
+  color: #0a0a0a;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .homeContainer {
+    gap: 30px;
+  }
+
+  .featured, .propertyList {
+    flex-direction: column;
+  }
+
+  .mailList input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .mailList button {
+    width: 100%;
+  }
+}

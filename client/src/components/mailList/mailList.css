@@ -1,0 +1,94 @@
+/* ================= MailList Container ================= */
+.mail {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background: #1a0a2f; /* deep purple-black */
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+/* ================= Title & Description ================= */
+.mailTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d8b4fe; /* light purple accent */
+}
+
+.mailDesc {
+  font-size: 1rem;
+  color: #f3e8ff;
+}
+
+/* ================= Input Container ================= */
+.mailInputContainer {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #2c0038;
+  box-shadow: 0 4px 15px rgba(157, 78, 221, 0.5);
+}
+
+/* ================= Input ================= */
+.mailInputContainer input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 50px 0 0 50px;
+  background-color: #2c0038;
+  color: #f3e8ff;
+}
+
+.mailInputContainer input::placeholder {
+  color: #caa6ff;
+}
+
+/* ================= Subscribe Button ================= */
+.mailInputContainer button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #9d4edd; /* purple accent */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mailInputContainer button:hover {
+  background-color: #d8b4fe; /* light purple hover */
+  color: #0a0a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(157, 78, 221, 0.6);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .mail {
+    padding: 30px 15px;
+  }
+
+  .mailInputContainer {
+    flex-direction: column;
+  }
+
+  .mailInputContainer input,
+  .mailInputContainer button {
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .mailInputContainer button {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,72 @@
+/* ================= Footer ================= */
+.footer {
+  width: 100%;
+  background-color: #1a0a2f; /* deep purple-black */
+  color: #f3e8ff;
+  padding: 50px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  border-top: 1px solid #3a0a6e;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ================= Lists Container ================= */
+.fLists {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* ================= Single List ================= */
+.fList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fListItem {
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #caa6ff; /* softer light purple */
+}
+
+.fListItem:hover {
+  color: #d8b4fe;
+  transform: translateX(5px);
+  text-shadow: 0 0 4px #d8b4fe;
+}
+
+/* ================= Footer Bottom Text ================= */
+.fText {
+  font-size: 0.85rem;
+  color: #aaa;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 1024px) {
+  .fLists {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fLists {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fList {
+    align-items: center;
+    text-align: center;
+  }
+}

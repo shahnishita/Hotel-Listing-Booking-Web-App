@@ -1,0 +1,77 @@
+/* ReserveForm.css */
+
+.reserveFormContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a0f2c, #2b003d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+}
+
+.reserveForm {
+  background-color: #1f0f3b;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.reserveForm h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #d8b8ff;
+  font-size: 2rem;
+}
+
+.reserveForm input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #2c1b4a;
+  color: #eee;
+  font-size: 1rem;
+}
+
+.reserveForm input::placeholder {
+  color: #bfb3c9;
+}
+
+.reserveForm h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #d8b8ff;
+  font-size: 1.2rem;
+}
+
+.reserveForm p {
+  margin: 5px 0;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.reserveFormButton {
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reserveFormButton:hover {
+  background: linear-gradient(90deg, #b27fff, #7b1fa2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}

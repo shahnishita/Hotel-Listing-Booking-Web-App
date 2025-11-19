@@ -1,0 +1,91 @@
+/* ================= Navbar ================= */
+.navbar {
+  width: 100%;
+  background-color: #1a0a2f; /* deep purple-black */
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ================= Logo ================= */
+.logo {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #d8b4fe; /* light purple accent */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #d8b4fe;
+  transform: scale(1.05);
+}
+
+/* ================= Nav Items ================= */
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navItems span {
+  font-weight: 500;
+  color: #caa6ff; /* softer light purple */
+  transition: all 0.3s ease;
+}
+
+.navItems span:hover {
+  color: #fff;
+  text-shadow: 0 0 6px #d8b4fe;
+}
+
+/* ================= Buttons ================= */
+.navButton {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #9d4edd; /* purple accent */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(157, 78, 221, 0.5);
+}
+
+.navButton:hover {
+  background-color: #d8b4fe; /* light purple hover */
+  color: #0a0a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(157, 78, 221, 0.7);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .navContainer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navItems {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navButton {
+    width: 100%;
+    text-align: center;
+  }
+}

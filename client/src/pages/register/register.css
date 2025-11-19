@@ -1,0 +1,183 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1a1a1a; /* Dark black background */
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentArea {
+  display: flex;
+  width: 700px;
+  height: 500px;
+  background-color: #111; /* Dark black card */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  flex-direction: row-reverse;
+}
+
+/* --- Left Side (Visual) --- */
+.left {
+  flex: 1;
+  background: linear-gradient(135deg, #6a0dad 0%, #9b30ff 100%); /* Dark purple to violet gradient */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* White text for contrast */
+  padding: 30px;
+  text-align: center;
+}
+
+.left h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.left p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.left span {
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.left button {
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.left button:hover {
+  background-color: #fff;
+  color: #6a0dad; /* Purple text on hover */
+}
+
+/* --- Right Side (Form) --- */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #1a1a1a; /* Black background */
+}
+
+.right h1 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.right p {
+  color: #ccc;
+  font-size: 13px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Styling */
+.right input {
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #222;
+  font-size: 13px;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.right input:focus {
+  border-color: #9b30ff; /* Purple highlight */
+  box-shadow: 0 0 0 3px rgba(155, 48, 255, 0.2);
+  background-color: #1a1a1a;
+}
+
+/* Submit Button */
+.right button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6a0dad 0%, #9b30ff 100%); /* Purple gradient button */
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.right button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(155, 48, 255, 0.4);
+}
+
+.right button:disabled {
+  background: #555;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.right span {
+  color: #ff4d4d; /* red for errors */
+  font-size: 11px;
+  margin-top: 8px;
+  text-align: center;
+  display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contentArea {
+    flex-direction: column-reverse;
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .left, .right {
+    padding: 25px;
+  }
+  
+  .left h1 { font-size: 26px; }
+  .right h1 { font-size: 24px; }
+}

@@ -1,0 +1,199 @@
+/* ================= Global Reset ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}
+
+/* ================= Header ================= */
+.header {
+  width: 100%;
+  background: linear-gradient(135deg, #1a0a2f, #3a0a6e);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.headerContainer {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.listMode {
+  margin-top: 20px;
+}
+
+/* ================= Title & Description ================= */
+.headerTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d8b4fe;
+}
+
+.headerDesc {
+  font-size: 1.2rem;
+  color: #f3e8ff;
+}
+
+/* ================= Buttons ================= */
+.headerBtn,
+.headerBtnRegister {
+  padding: 10px 20px;
+  background: #9d4edd;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.headerBtn:hover,
+.headerBtnRegister:hover {
+  background: #d8b4fe;
+  color: #0a0a0a;
+  transform: translateY(-2px);
+}
+
+/* ================= Search Bar ================= */
+.headerSearch {
+  width: 100%;
+  background-color: #1f0f2c;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  flex-wrap: wrap;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 1;
+  min-width: 180px;
+}
+
+.headerIcon {
+  font-size: 1.2rem;
+  color: #d8b4fe;
+  cursor: pointer;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #f3e8ff;
+  width: 100%;
+  padding: 8px;
+}
+
+/* ================= Search Text & Dropdowns ================= */
+.headerSearchText {
+  color: #f3e8ff;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Options Dropdown */
+.options {
+  position: absolute;
+  top: 50px;
+  background-color: #2c0038;
+  color: #f3e8ff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  z-index: 10;
+}
+
+.optionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.optionText {
+  font-weight: 500;
+  color: #caa6ff;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #9d4edd;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.optionCounterButton:disabled {
+  background-color: #5a0a7e;
+  cursor: not-allowed;
+}
+
+.optionCounterButton:hover:not(:disabled) {
+  background-color: #d8b4fe;
+  color: #0a0a0a;
+}
+
+.optionCounterNumber {
+  font-weight: 600;
+}
+
+/* ================= Date Picker ================= */
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 10;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .headerContainer {
+    gap: 15px;
+  }
+
+  .headerSearch {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .headerSearchItem {
+    width: 100%;
+  }
+
+  .options {
+    top: 60px;
+  }
+
+  .date {
+    top: 60px;
+  }
+}
